@@ -50,8 +50,20 @@
 .question-row{
   padding: 40px 40px 0;
   background-color: white;
-  flex: 1; /* サイドバー以外の残りの幅をすべて埋める */
-  overflow-y: auto; /* コンテンツが多い場合にスクロールさせる */
+  flex: 1;
+  overflow-y: auto;
+}
+.new-question {
+  margin-bottom: 30px;
+}
+.make-question a {
+  text-decoration: none;
+}
+.row-title {
+  margin: 10px 0 0 0;
+}
+.question {
+  margin: 10px 0 0 0;
 }
 
 /* フッター */
