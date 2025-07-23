@@ -35,11 +35,20 @@
   overflow: hidden; /* はみ出し防止 */
 }
 .side-bar {
+  padding: 0 20px;
   background-color: lightcyan;
-  width: 300px;
-  overflow-y: auto; /* コンテンツが多い場合にスクロールさせる */
+  width: 200px;
+  overflow-y: auto;
+}
+.category {
+  padding: 20px 0 40px;
+}
+.category-name a {
+  text-decoration: none;
+  color: black
 }
 .question-row{
+  padding: 40px 40px 0;
   background-color: white;
   flex: 1; /* サイドバー以外の残りの幅をすべて埋める */
   overflow-y: auto; /* コンテンツが多い場合にスクロールさせる */
