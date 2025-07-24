@@ -1,0 +1,110 @@
+/* ヘッダー */
+.header {
+  background-color: #f1f8fe;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.hptitle {
+  color: black;
+  font-size: 20px;
+  width: 200px;
+}
+.header_right {
+  display: flex;
+  justify-content: space-between;
+}
+.header_btn {
+  height: 20px;
+  margin: 20px;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+/* ボディ */
+.wrapper {
+  display: flex;
+  flex: 1; /* ヘッダーとフッター以外の残りの高さをすべて埋める */
+  overflow: hidden; /* はみ出し防止 */
+}
+.side-bar {
+  padding: 0 20px;
+  background-color: lightcyan;
+  width: 200px;
+  overflow-y: auto;
+}
+.category {
+  padding: 20px 0 40px;
+}
+.category-name a {
+  text-decoration: none;
+  color: black
+}
+.question-row{
+  padding: 40px 40px 0;
+  background-color: white;
+  flex: 1;
+  overflow-y: auto;
+}
+.new-question {
+  margin-bottom: 30px;
+}
+.new-question a {
+  text-decoration: none;
+}
+.row-title {
+  margin: 10px 0 0 0;
+}
+.question {
+  margin: 10px 0 0 0;
+}
+.upper-space {
+  display: flex;
+}
+.question-title {
+  color: navy;
+  font-size: 20px;
+}
+.question-category {
+  color: black;
+  font-size: 16px;
+  padding-left: 12px;
+}
+.question-date {
+  color: #999;
+  font-size: 16px;
+  padding-left: 12px;
+}
+.lower-space {
+  display: flex;
+  margin-top: 10px;
+}
+.question-user {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.deadline {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+/* フッター */
+
+.footer {
+  background-color: #999;
+  padding: 5px;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}

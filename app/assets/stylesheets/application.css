@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+  height: 100%;
+}
+
+body {
+  margin: 0; /* ブラウザのデフォルトマージンをリセット */
+  height: 100%;
+  display: flex; /* bodyをFlexコンテナにする */
+  flex-direction: column; /* 子要素を縦に並べる */
+}
