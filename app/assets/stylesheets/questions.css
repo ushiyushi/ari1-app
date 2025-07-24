@@ -56,7 +56,7 @@
 .new-question {
   margin-bottom: 30px;
 }
-.make-question a {
+.new-question a {
   text-decoration: none;
 }
 .row-title {
@@ -64,6 +64,37 @@
 }
 .question {
   margin: 10px 0 0 0;
+}
+.upper-space {
+  display: flex;
+}
+.question-title {
+  color: navy;
+  font-size: 20px;
+}
+.question-category {
+  color: black;
+  font-size: 16px;
+  padding-left: 12px;
+}
+.question-date {
+  color: #999;
+  font-size: 16px;
+  padding-left: 12px;
+}
+.lower-space {
+  display: flex;
+  margin-top: 10px;
+}
+.question-user {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.deadline {
+  color: navy;
+  font-size: 16px;
+  padding-left: 20px;
 }
 
 /* フッター */
