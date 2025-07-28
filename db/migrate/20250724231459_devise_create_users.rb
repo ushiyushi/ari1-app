@@ -10,7 +10,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.integer :age,                null: true
       t.string :occupation,          null: true
       t.integer :prefecture_id,      null: true
-      t.integer :strong_category_id, null: true
+      t.integer :category_id,        null: true
 
       ## Recoverable
       t.string   :reset_password_token
