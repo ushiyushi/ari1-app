@@ -12,7 +12,7 @@
 
   <body>
     <header class="header">
-      <p class="hptitle">Question AriApp</p>
+      <%= link_to "Question AriApp", root_path, class: "hptitle" %>
       <div class="header_right">
         <% if user_signed_in? %>
           <%= link_to current_user.nickname + "さんのマイページ", "#", class: :header_btn %>
