@@ -66,5 +66,5 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'devise'
-gem 'active_hash'
+gem 'active_hash'gem 'devise'
+
