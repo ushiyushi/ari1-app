@@ -1,0 +1,52 @@
+<div class="contents row">
+  <div class="container">
+    <div class="container-title" >
+      <h3>投稿する</h3>
+    </div>
+
+    <% if @question.errors.any? %>
+      <div id="error_explanation" data-turbo-cache="false">
+        <h2>
+          <%= I18n.t("errors.messages.not_saved",
+                     count: @question.errors.count,
+                     resource: @question.class.model_name.human.downcase) %>
+        </h2>
+        <ul>
+          <% @question.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="question-form" >
+    <%= form_with(model: @question, local: true) do |form| %>
+      <div class="question-field" >
+      <%= form.text_field :title, placeholder: "タイトル" %>
+      </div>
+      <div class="question-field" >
+      <%= form.text_area :text, placeholder: "質問内容", rows: "10" %>
+      </div>
+      <%= form.collection_select(:category_id, Category.all, :id, :name, {}) %>
+      </div>
+      <div class="question-field" >
+      <%= form.label :deadline, "返答期限" %><br />
+      </div>
+      <div class="question-field-date" >
+      <%= raw sprintf(
+                  form.date_select(
+                    :deadline,
+                    use_month_numbers: true,
+                    prompt:'--',
+                    start_year: Time.now.year,
+                    end_year: (Time.now.year + 1),
+                    date_separator: '%s'),
+                  "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+      </div>
+      <div class="question-field" >
+      <%= form.submit "送信" %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>

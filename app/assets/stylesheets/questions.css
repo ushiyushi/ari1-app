@@ -110,3 +110,8 @@
   color: #fff;
   font-size: 10px;
 }
+
+/* 投稿フォーム */
+.container {
+  display: flex;
+}
